@@ -187,13 +187,17 @@ function populateChart(data) {
 }
 
 function duration(data) {
-  let durations = [];
+  let durations = new Array(7).fill(0)
 
   data.forEach(workout => {
+    var day = new Date(workout.day).getDay()
+
     workout.exercises.forEach(exercise => {
-      durations.push(exercise.duration);
-    });
-  });
+      durations[day] = durations[day] + exercise.duration
+    })
+  })
+
+  
 
   return durations;
 }

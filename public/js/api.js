@@ -17,7 +17,7 @@ const API = {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
-      });
+      })
   
       const json = await res.json();
   
