@@ -1,4 +1,4 @@
-const  Workout  = require("../models");
+const  {Workout}  = require("../models");
 
 module.exports = function(app) {
   // this route should find all workouts in the table and display them as JSON
