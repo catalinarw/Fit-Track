@@ -21,7 +21,7 @@ app.use(express.static("./public"));
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/exercise", {
 	useNewUrlParser: true,
 	useFindAndModify: false
-});git
+});
 
 
 // Sets up request logging
