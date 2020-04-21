@@ -18,10 +18,10 @@ app.use(express.json());
 app.use(express.static("./public"));
 
 // Connecting to either our remote Mongo db or our local db
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/exercise", {
 	useNewUrlParser: true,
 	useFindAndModify: false
-});
+});git
 
 
 // Sets up request logging
