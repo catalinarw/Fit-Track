@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const logger = require("morgan");
 // const path = require("path")
 // const db = require("./models/workout")
-// const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 const app = express();
 
 
@@ -15,13 +15,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Static directory
-app.use(express.static("public"));
+app.use(express.static("./public"));
 
 // Connecting to either our remote Mongo db or our local db
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workouts", {
-     useNewUrlParser: true,
-     useFindAndModify: false
-     });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+	useNewUrlParser: true,
+	useFindAndModify: false
+});
 
 
 // Sets up request logging
