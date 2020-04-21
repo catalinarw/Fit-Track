@@ -6,7 +6,6 @@
   },
   "description": "",
   "main": "server.js",
-
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -15,9 +14,16 @@
     "morgan": "^1.9.1"
   },
   "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1"
-  
-                  
-  }
-  
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catalinarose1361/Fit-Track.git"
+  },
+  "bugs": {
+    "url": "https://github.com/catalinarose1361/Fit-Track/issues"
+  },
+  "homepage": "https://github.com/catalinarose1361/Fit-Track#readme"
 }
