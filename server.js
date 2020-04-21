@@ -33,5 +33,5 @@ require("./routes/html-routes.js")(app);
 // Starting our Express app
 // =============================================================
 app.listen(PORT, () => {
-    console.log(`App listening on http://localhost:${PORT}`);
+    console.log(`App listening on https://localhost:${PORT}`);
 });
