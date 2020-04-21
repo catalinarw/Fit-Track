@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 // Connecting to either our remote Mongo db or our local db
-mongoose.connect(process.env.MONGODB_URI || "mongodb://username:password@ds031751.mlab.com:31751/heroku_jnn204qw", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://username:password1361@ds031751.mlab.com:31751/heroku_jnn204qw", { useNewUrlParser: true });
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
